@@ -7,15 +7,17 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 const routes: Routes = [
   {
     path: 'sign-in',
-    component: SignInComponent
+    component: SignInComponent,
+    title:'Sign In'
   },
   {
     path: 'sign-up',
-    component: SignUpComponent
+    component: SignUpComponent,
+    title:'Sign Up'
   },
   {
     path: '',
-    redirectTo: '/sign-in',
+    redirectTo: 'sign-up',
     pathMatch: 'full'
   },
   {

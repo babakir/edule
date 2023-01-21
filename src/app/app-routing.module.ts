@@ -4,8 +4,12 @@ import { PageNotFoundComponent } from './shared/shared/page-not-found/page-not-f
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'auth',
     loadChildren: () => import('./views/auth/auth.module').then(m => m.AuthModule)
+  },
+  {
+    path: 'course',
+    loadChildren: () => import('./views/course/course.module').then(m => m.CourseModule)
   },
   {
     path: '**',
